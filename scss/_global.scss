@@ -1,0 +1,145 @@
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Onest", sans-serif;
+  &.overflow {
+    overflow: hidden !important;
+  }
+}
+
+body {
+  @include flex;
+  @include dir-col;
+  @include justify-between;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Onest", sans-serif;
+}
+
+input,
+textarea {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+  background: none;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.wrapper {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-title {
+  color: #fff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.main-btn {
+  @include inline-flex;
+  @include align-center;
+  @include justify-center;
+  background: #471224;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 34px;
+  border-radius: 40px;
+  color: #ebe5e0;
+  img {
+    margin-left: 15px;
+  }
+  &:hover {
+    background: lighten(#471224, 7%);
+  }
+  &.scroll {
+    background: white;
+    color: #471224;
+  }
+}
+
+.white-btn {
+  @include inline-flex;
+  @include align-center;
+  @include justify-center;
+  border: 1px solid #471224;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 34px;
+  border-radius: 40px;
+  color: #471224;
+  &:hover {
+    background: #471224;
+    color: #ebe5e0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
